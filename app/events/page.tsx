@@ -147,7 +147,7 @@ export default function EventsPage() {
     <div className="min-h-screen">
       <div className="bg-gradient-to-br from-emerald-50 to-teal-50 px-10">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white py-1 overflow-hidden">
+        <section className="relative bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white overflow-hidden">
           {/* Background Image */}
           <img
               src="landing.jpg"

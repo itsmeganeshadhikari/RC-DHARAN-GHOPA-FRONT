@@ -112,7 +112,7 @@ export default function MembersPage() {
     <div className="min-h-screen px-10">
       <div className="bg-gradient-to-br from-slate-50 to-emerald-50">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white p-1">
+        <section className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white">
           <div className="container mx-auto text-center">
             <img
               src="dedicated.jpg"

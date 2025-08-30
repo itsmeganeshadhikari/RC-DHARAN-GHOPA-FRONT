@@ -147,18 +147,17 @@ export default function EventsPage() {
     <div className="min-h-screen">
       <div className="bg-gradient-to-br from-emerald-50 to-teal-50 px-10">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white py-16 overflow-hidden">
+        <section className="relative bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white py-1 overflow-hidden">
           {/* Background Image */}
-          <div className="absolute inset-0 z-0 p-1">
-            <img
-              src="/community-health-camp-medical-volunteers.png"
+          <img
+              src="landing.jpg"
               alt="Community service background"
-              className="w-full h-full object-cover opacity-90"
+              className="w-full h-[450px] object-cover opacity-90"
             />
+          <div className="absolute inset-0 z-0 p-1">
           </div>
-
           {/* Content */}
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="container mx-auto px-4 text-center relative z-10 py-2">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Events</h1>
             <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
               Join us in making a difference through community service, fellowship, and meaningful action. Together, we

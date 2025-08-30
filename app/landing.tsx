@@ -8,23 +8,23 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 px-10">
       <main>
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <VedioFrame />
-          {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-indigo-900/60 to-purple-900/70"></div> */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-indigo-900/60 to-purple-900/70"></div>
           <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
             <div className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-8 py-3 rounded-full text-sm font-bold mb-12 uppercase tracking-wide shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <Star className="w-5 h-5" />
+              <Star className="w-5 h-2" />
               Service Above Self
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight bg-gradient-to-r from-white via-blue-100 to-yellow-200 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight bg-gradient-to-r from-white via-blue-100 to-yellow-200 bg-clip-text text-transparent">
               Help Poor People Life
               <br />
               <span className="text-yellow-300">& Their Formation</span>
             </h1>
 
             <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed text-blue-100 font-light">
-              Rotary Club has built a platform focused on aiding entrepreneurs, startups, and companies raise capital
+              Rotary Club of Dharan Ghopa has built a platform focused on aiding entrepreneurs, startups, and companies raise capital
               from anyone
             </p>
 
@@ -44,7 +44,7 @@ export default function Landing() {
         <div className="container mx-auto px-6 py-24 space-y-32">
           <section>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-r from-blue-600 to-indigo-700 group transform hover:scale-[1.02] transition-all duration-500">
-              <video
+              {/* <video
                 className="w-full h-[450px] md:h-[550px] object-cover"
                 autoPlay
                 muted
@@ -52,10 +52,17 @@ export default function Landing() {
                 playsInline
                 poster="/rotary-club-community-service-volunteers-helping-p.png"
               >
-                <source src="/videos/rotary-hero.mp4" type="video/mp4" />
+                <source src="landing.jpg" type="video/mp4" />
                 <source src="/videos/rotary-hero.webm" type="video/webm" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+              <img
+                src="/landing.jpg"
+                alt="Community service background"
+                className="w-full h-[450px] object-cover opacity-90"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-200/70 via-indigo-400/60 to-purple-500/70"></div> */}
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end">
                 <div className="p-10 md:p-16 text-white">
                   <div className="flex items-center gap-4 mb-6">
@@ -242,7 +249,7 @@ export default function Landing() {
                   className="bg-gradient-to-r from-white to-blue-50 text-blue-800 hover:from-blue-50 hover:to-white shadow-2xl font-bold px-10 py-6 text-lg rounded-full group transform hover:scale-105 transition-all duration-300">
                   <Link href="/membership">
                     Become a Member
-                   </Link>
+                  </Link>
                   <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button
@@ -251,7 +258,7 @@ export default function Landing() {
                   className="bg-gradient-to-r from-white to-blue-50 text-blue-800 hover:from-blue-50 hover:to-white shadow-2xl font-bold px-10 py-6 text-lg rounded-full group transform hover:scale-105 transition-all duration-300"
                 >
                   <Link href="/contact">
-                  Contact Us Today
+                    Contact Us Today
                   </Link>
                 </Button>
               </div>

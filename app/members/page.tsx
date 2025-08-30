@@ -112,10 +112,15 @@ export default function MembersPage() {
     <div className="min-h-screen px-10">
       <div className="bg-gradient-to-br from-slate-50 to-emerald-50">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">Our Dedicated Members</h1>
-            <p className="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto text-balance">
+        <section className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white p-1">
+          <div className="container mx-auto text-center">
+            <img
+              src="dedicated.jpg"
+              alt="Community service background"
+              className="w-full h-[400px] object-cover opacity-90"
+            />
+            <h1 className="text-2xl md:text-4xl font-bold mb-6 text-balance m-2">Our Dedicated Members</h1>
+            <p className="text-xl md:text-xl text-emerald-100 max-w-3xl mx-auto text-balance">
               Meet the passionate individuals who make our community service possible through their dedication and
               commitment.
             </p>

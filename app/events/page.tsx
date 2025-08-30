@@ -149,13 +149,12 @@ export default function EventsPage() {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white py-16 overflow-hidden">
           {/* Background Image */}
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 p-1">
             <img
               src="/community-health-camp-medical-volunteers.png"
               alt="Community service background"
-              className="w-full h-full object-cover opacity-60"
+              className="w-full h-full object-cover opacity-90"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/60 via-teal-600/60 to-cyan-700/60"></div>
           </div>
 
           {/* Content */}

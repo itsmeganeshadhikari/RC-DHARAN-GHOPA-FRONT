@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Info, Users, UserCheck, Briefcase, Camera, Mail, Heart, Phone, Calendar } from "lucide-react"
+import { Info, Users, UserCheck, Briefcase, Camera, Mail, Heart, Phone, Calendar,File } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { MobileMenu } from "./mobile-menu"
@@ -11,6 +11,9 @@ const serviceLinks = [
   { name: "Our Works", icon: Briefcase, href: "/works" },
   { name: "Events", icon: Calendar, href: "/events" },
   { name: "Media", icon: Camera, href: "/media" },
+  { name: "Our Partner", icon: Users, href: "/our-partner" },
+  { name: "Partner In Service", icon: UserCheck, href: "/partner-in-service" },
+  { name: "Reports", icon: File, href: "/reports" },
   { name: "Contact", icon: Mail, href: "/contact" },
   { name: "Donate Us", icon: Heart, href: "/donate" },
 ]
@@ -27,7 +30,7 @@ export default function ServerHeader() {
           >
             <div className="relative w-12 h-12 sm:w-14 sm:h-14">
               <Image
-                src="/rotary-international-logo-yellow-wheel.png"
+                src="/logo.png"
                 alt="Rotary International Logo"
                 width={56}
                 height={56}
@@ -69,15 +72,15 @@ export default function ServerHeader() {
       </div>
 
       <nav className="hidden md:block bg-gray-50 border-t" role="navigation" aria-label="Main navigation">
-        <div className="container mx-auto px-10">
-          <ul className="flex items-center gap-1 overflow-x-auto">
+        <div className="container mx-auto">
+          <ul className="flex items-center overflow-x-auto justify-evenly whitespace-nowrap px-1 gap-1">
             {serviceLinks.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="flex items-center gap-2 text-blue-800 hover:text-green-800 hover:bg-blue-50 whitespace-nowrap text-sm font-medium py-3 px-4 rounded-md transition-colors"
+                  className="flex items-center text-blue-800 hover:text-green-800 hover:bg-blue-50 whitespace-nowrap text-sm font-medium py-3 rounded-md transition-colors"
                 >
-                  <link.icon className="w-5 h-4" aria-hidden="true" />
+                  <link.icon className="w-5 h-4 " aria-hidden="true" />
                   <span>{link.name}</span>
                 </Link>
               </li>

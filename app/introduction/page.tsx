@@ -22,12 +22,20 @@ export default function IntroductionPage() {
       <main className="min-h-screen px-10">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20 lg:py-32 animate-in fade-in duration-1000">
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-black/20"></div>   
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/community-health-camp-medical-volunteers.png"
+              alt="Community service background"
+              className="w-full h-full object-cover opacity-60"
+            />
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/60 via-teal-600/60 to-cyan-700/60"></div> */}
+          </div>       
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8 animate-in slide-in-from-top duration-700 delay-300">
                 <Image
-                  src="/rotary-international-logo-yellow-wheel.png"
+                  src="/logo.png"
                   alt="Rotary International Logo"
                   width={120}
                   height={120}
